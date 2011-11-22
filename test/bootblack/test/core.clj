@@ -2,5 +2,7 @@
   (:use [bootblack.core])
   (:use [clojure.test]))
 
-(deftest replace-me ;; FIXME: write
-  (is false "No tests have been written."))
+(deftest error
+         (let [r (error-item ["foobar"])
+               exp "<span class=\"help-inline\">foobar</span>"]
+           (is (= exp (str r)))))
