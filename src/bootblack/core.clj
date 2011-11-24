@@ -1,7 +1,5 @@
 (ns bootblack.core
   (:require [noir.validation :as vali]
-            [noir.response :as resp]
-            [noir.content.pages :as pages]
             [hiccup.form-helpers :as form])
   (:use noir.core
         hiccup.core))
