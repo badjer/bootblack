@@ -26,7 +26,7 @@
             (input-field form/password-field nam label value))
 
 (defpartial form-to [legend submittxt url method & contents]
-            [:form {:method method :action url}
+            [:form.form-stacked {:method method :action url}
              [:fieldset
               [:legend legend]
               contents]
