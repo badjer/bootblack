@@ -30,6 +30,9 @@
 (defpartial file-field [nam label]
             (input-field form/file-upload nam label nil))
 
+(defpartial hidden-field [nam value]
+            (form/hidden-field nam value))
+
 (defpartial form-to [legend submittxt url method & contents]
             [:form.form-stacked {:method method :action url}
              [:fieldset
